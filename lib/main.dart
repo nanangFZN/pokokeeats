@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:pokokeeats/views/login.dart';
+import 'package:pokokeeats/views/register.dart';
 import 'package:pokokeeats/views/splash.dart';
 
 void main() {
@@ -18,10 +20,13 @@ class MyApp extends StatelessWidget {
     ]);
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-     routes: {
-      "/" : (context)=>SplashPage(),
-      
-     },
+     initialRoute: "/",
+      routes:{
+          "/":(context)=> SplashPage(),
+          "login":(context)=> LoginPage(),
+          "register":(context)=> RegisterPage(),
+         
+      }
     );
   }
 }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:pokokeeats/r.dart';
+import 'package:pokokeeats/views/main/main_page.dart';
 import 'package:pokokeeats/views/register.dart';
 
 class LoginPage extends StatefulWidget {
@@ -125,7 +126,9 @@ class _LoginPageState extends State<LoginPage> {
                                 style: ElevatedButton.styleFrom(
                                   primary: R.colors.primary,
                                 ),
-                                onPressed: (){},
+                                onPressed: (){
+                                  Navigator.push(context, MaterialPageRoute(builder: (context)=>MainPage()));
+                                },
                                 child: Text("Sign In",style:GoogleFonts.nunito(
                                   fontSize:20,
                                   fontWeight:FontWeight.bold
@@ -145,7 +148,7 @@ class _LoginPageState extends State<LoginPage> {
                             ),
                             TextButton(
                               onPressed: (){
-                                Navigator.push(context, MaterialPageRoute(builder: (context)=>RegisterPage()));
+                                Navigator.pushNamed(context, "register");
                               },
                                child: Text("Sign Up Now",
                                style: GoogleFonts.nunito(

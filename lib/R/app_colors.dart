@@ -6,5 +6,7 @@ class AppColors{
   Color third = Color(0xffF4E06D);
   Color fourth = Color(0xffFFD36E);
   Color fifth = Color(0xffB73C3C);
+  Color register = Color(0xffE3FCBF);
+  Color outlet =Color(0xffFFFFDE);
   
 }

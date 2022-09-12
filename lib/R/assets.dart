@@ -4,5 +4,6 @@ class SourceImage{
   String icCart = "assets/cart.png";
   String icMenu = "assets/menu.png";
   String icHome = "assets/home.png";
-   String icUser = "assets/user.png";
+  String icUser = "assets/user.png";
+  String disc = "assets/disc.png";
 }
